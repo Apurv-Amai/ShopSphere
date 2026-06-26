@@ -122,6 +122,7 @@ Admin
 Create an admin user directly in the database by updating the user's role to:
 
 ROLE_ADMIN
+
 User
 
 Register a new account using the Register page.
