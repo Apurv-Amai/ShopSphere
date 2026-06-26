@@ -47,14 +47,6 @@ A Full Stack E-Commerce Platform built using Spring Boot, ReactJS, JWT Authentic
 - Axios
 - Tailwind CSS
 
-## Project Structure
-
-ShopSphere
-
-├── ecommerce-backend
-
-└── ecommerce-frontend
-
 ## Security Features
 
 - BCrypt Password Encryption
@@ -63,14 +55,76 @@ ShopSphere
 - Protected Routes
 - Exception Handling
 
-## Future Improvements
+## Prerequisites
 
-- Product Images Upload
-- Order Management Dashboard
-- User Profile Management
-- Pagination & Advanced Filtering
-- Payment Gateway Integration
+Before running the project, make sure the following software is installed:
 
-## Author
+Java JDK 21
+Maven
+MySQL Server
+Node.js (LTS Version)
+Git
+VS Code / Eclipse or Spring Tool Suite (STS)
 
-Apurv Amai
+## Installation & Setup
+# 1. Clone the Repository
+git clone https://github.com/Apurv-Amai/ShopSphere.git
+cd ShopSphere
+# 2. Backend Setup
+
+Navigate to the backend folder:
+
+cd ecommerce-backend
+
+Open the project in Spring Tool Suite (STS) or Eclipse.
+
+Update the database configuration inside:
+
+src/main/resources/application.properties
+
+Example:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce_db
+spring.datasource.username=root
+spring.datasource.password=your_password
+
+Create a MySQL database named:
+
+ecommerce_db
+
+Run the Spring Boot application.
+
+The backend will start at:
+
+http://localhost:8080
+# 3. Frontend Setup
+
+Open a new terminal.
+
+Navigate to the frontend folder:
+
+cd ecommerce-frontend
+
+Install all dependencies:
+
+npm install
+
+Start the React application:
+
+npm run dev
+
+The frontend will start at:
+
+http://localhost:5173
+# 4. Login Credentials
+Admin
+
+Create an admin user directly in the database by updating the user's role to:
+
+ROLE_ADMIN
+User
+
+Register a new account using the Register page.
+
+# API Base URL
+http://localhost:8080
