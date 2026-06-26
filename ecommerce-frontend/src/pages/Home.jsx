@@ -27,7 +27,7 @@ function Home() {
           mb-4
         "
           >
-            Welcome To E-Commerce Store
+            Welcome To ShopSphere Store
           </h1>
 
           <p
