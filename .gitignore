@@ -9,6 +9,7 @@ ecommerce-backend/.mvn/
 ecommerce-backend/.classpath
 ecommerce-backend/.project
 ecommerce-backend/.settings/
+ecommerce-backend/src/main/resources/application.properties
 
 # =========================
 
