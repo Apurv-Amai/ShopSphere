@@ -67,9 +67,12 @@ Git
 VS Code / Eclipse or Spring Tool Suite (STS)
 
 ## Installation & Setup
+
 # 1. Clone the Repository
+
 git clone https://github.com/Apurv-Amai/ShopSphere.git
 cd ShopSphere
+
 # 2. Backend Setup
 
 Navigate to the backend folder:
@@ -78,15 +81,19 @@ cd ecommerce-backend
 
 Open the project in Spring Tool Suite (STS) or Eclipse.
 
-Update the database configuration inside:
+Copy the sample config and update it with your own values:
 
-src/main/resources/application.properties
+cd ecommerce-backend
+copy src/main/resources/application.properties.example src/main/resources/application.properties
 
-Example:
+Then edit `src/main/resources/application.properties` and update:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce_db
 spring.datasource.username=root
 spring.datasource.password=your_password
+app.jwt.secret=your_jwt_secret_here
+
+Do not commit `src/main/resources/application.properties` to Git. It is already ignored by `.gitignore`.
 
 Create a MySQL database named:
 
@@ -97,6 +104,7 @@ Run the Spring Boot application.
 The backend will start at:
 
 http://localhost:8080
+
 # 3. Frontend Setup
 
 Open a new terminal.
@@ -116,7 +124,9 @@ npm run dev
 The frontend will start at:
 
 http://localhost:5173
+
 # 4. Login Credentials
+
 Admin
 
 Create an admin user directly in the database by updating the user's role to:
@@ -128,4 +138,5 @@ User
 Register a new account using the Register page.
 
 # API Base URL
+
 http://localhost:8080
