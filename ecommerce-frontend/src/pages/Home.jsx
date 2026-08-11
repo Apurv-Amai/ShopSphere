@@ -117,7 +117,7 @@ function Home() {
           mb-4
         "
               >
-                Welcome Back, {user?.name} 👋
+                Welcome, {user?.name} 👋
               </h1>
 
               <p

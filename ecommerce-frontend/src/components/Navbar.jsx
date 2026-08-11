@@ -32,9 +32,7 @@ function Navbar() {
         {/* Left Side */}
         <div className="flex gap-6 items-center">
           {isAuthenticated && user && (
-            <span className="font-semibold text-yellow-300">
-              Welcome, {user.name} 👋
-            </span>
+            <span className="font-semibold text-yellow-300">{user.name}</span>
           )}
 
           <NavLink to="/" className={navLinkStyle}>

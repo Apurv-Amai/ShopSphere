@@ -14,6 +14,7 @@ import AddProduct from "../pages/AddProduct";
 import EditProduct from "../pages/EditProduct";
 import AdminCategories from "../pages/AdminCategories";
 import UserRoute from "./UserRoute";
+import OAuth2Callback from "../pages/OAuth2Callback";
 
 function AppRoutes() {
   return (
@@ -23,6 +24,8 @@ function AppRoutes() {
       <Route path="/login" element={<Login />} />
 
       <Route path="/register" element={<Register />} />
+
+      <Route path="/oauth2/callback" element={<OAuth2Callback />}/>
 
       <Route
         path="/products"

@@ -99,6 +99,24 @@ function Login() {
           Login
         </button>
 
+        <div className="flex items-center my-4">
+          <div className="flex-1 border-t"></div>
+          <span className="px-3 text-gray-500 text-sm">OR</span>
+          <div className="flex-1 border-t"></div>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => {
+            window.location.href =
+              "http://localhost:8080/oauth2/authorization/google";
+          }}
+          className="border w-full p-2 rounded flex items-center justify-center gap-2 hover:bg-gray-100"
+        >
+          <span className="font-bold text-lg">G</span>
+          Continue with Google
+        </button>
+
         <p className="mt-4 text-center">
           Don't have an account?
           <span
